@@ -23,7 +23,6 @@ pageTurnBtn.forEach((el, index) => {
     }
 });
 
-
 // contact me button when click
 const pages = document.querySelectorAll('.book-page.page-right');
 const contactMeBtn = document.querySelector('.btn.contact-me');
@@ -40,7 +39,6 @@ contactMeBtn.onclick = () => {
     });
 }
 
-
 // create reverse index function
 let totalPages = pages.length;
 let pageNumber = 0;
@@ -51,7 +49,6 @@ function reverseIndex() {
         pageNumber = totalPages - 1;
     }
 }
-
 
 // back profile button when click
 const backProfileBtn = document.querySelector('.back-profile');
@@ -72,11 +69,9 @@ backProfileBtn.onclick = () => {
     })
 }
 
-
 // opening animation
 const coverRight = document.querySelector('.cover.cover-right');
 const pageLeft = document.querySelector('.book-page.page-left');
-
 
 // open animation (cover right animation)
 setTimeout(() => {
@@ -86,7 +81,6 @@ setTimeout(() => {
 setTimeout(() => {
     coverRight.style.zIndex = -1;
 }, 2800);
-
 
 pages.forEach((_, index) => {
     setTimeout(() => {
